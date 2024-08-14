@@ -1,0 +1,150 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevent scrolling */
+}
+
+.game-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px; /* Set fixed width */
+  height: 600px; /* Set fixed height */
+  text-align: center;
+  background-color: #ffffff;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.game-title {
+  font-size: 50px; /* Set font size according to the provided details */
+  color: #36006C; /* Set title color */
+  margin-bottom: 20px;
+  width: 738px; /* Fixed width */
+  height: 61px; /* Fixed height */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500; /* Medium weight */
+  text-align: justify; /* Justify text */
+  text-align-last: justify; /* Ensure the last line is also justified */
+  position: relative;
+}
+
+.game-title::after {
+  content: '';
+  width: 100%;
+  display: inline-block;
+  height: 0;
+  line-height: 0;
+}
+
+
+.game-description {
+  font-size: 21px; /* Set font size according to the provided details */
+  color: #000000; /* Set text color */
+  margin-bottom: 40px;
+  width: 754px; /* Fixed width */
+  height: 134px; /* Fixed height */
+  margin: 0 auto; /* Center the text */
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300; /* Light weight */
+  text-align: left; /* Align text to the left */
+}
+
+.select-bet {
+  font-size: 21px; /* Set font size according to the provided details */
+  color: #000000; /* Set text color */
+  margin-bottom: 20px;
+  width: 100%; /* Make the width 100% of the container */
+  height: 25px; /* Fixed height */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500; /* Medium weight */
+  text-align: center; /* Center align the text */
+  position: relative;
+}
+
+
+.game-form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 40px;
+  width: 738px; /* Fixed width */
+  margin: 0 auto; /* Center the form */
+}
+
+.throw-option {
+  text-align: center;
+  width: 240px; /* Fixed width */
+  height: 273px; /* Fixed height */
+  position: relative;
+}
+
+.throw-option input[type="radio"] {
+  display: none;
+}
+
+.throw-label {
+  display: block;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  padding: 10px;
+  border-radius: 10px;
+  height: 100%; /* Fill the height of the container */
+  box-sizing: border-box;
+}
+
+.throw-label:hover,
+.throw-option input[type="radio"]:checked + .throw-label {
+  background-color: #F8F8F8; /* Set hover and selected background color */
+}
+
+.throw-label img {
+  width: 100px; /* Set a fixed width for the images */
+  height: 200px; /* Set a fixed height for the images */
+  object-fit: contain; /* Ensure the image maintains its aspect ratio within the set dimensions */
+  margin-bottom: 10px; /* Add some space below the image */
+}
+
+
+.throw-label span {
+  display: block;
+  margin-top: 10px;
+  font-size: 24px; /* Set font size according to the provided details */
+  color: #36006C; /* Set text color for throw options */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500; /* Medium weight */
+  text-align: center; /* Center align the text */
+}
+
+.result-container {
+  margin-top: 30px;
+  width: 738px; /* Fixed width */
+  margin: 0 auto;
+}
+
+.result-title {
+  font-size: 2rem;
+  color: #36006C; /* Set title color */
+}
+
+.result-detail {
+  font-size: 1.2rem;
+  color: #000000; /* Set text color */
+}
