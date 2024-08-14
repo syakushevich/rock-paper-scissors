@@ -1,24 +1,4 @@
-# README
+`rails s` to start BE server
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+`yarn run esbuild app/assets/application.jsx app/assets/components.js app/assets/server_rendering.js --bundle --sourcemap --format=esm --outdir=app/assets/builds --public-path=/assets --watch --loader:.js=jsx --loader:.png=file`
+to start FE server
